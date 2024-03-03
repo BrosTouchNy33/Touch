@@ -1,0 +1,351 @@
+h1,h2,p,ul,h3{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.menu-bar{
+  background-color: crimson;
+}
+.menu-box ul {
+  display: flex;
+}
+.menu-box ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 18px;
+  color: white;
+}
+.menu-bar ul li a.router-link-active{
+  background-color: green;
+}
+.menu-box ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.427);
+}
+.popup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.162);
+}
+.loading{
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url("Loading.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-50%,-50%);
+  background-size: contain;
+}
+.slide-container{
+  height: 630px;
+  /* background-color: sandybrown; */
+  padding: 0;
+}
+.slide-container .mySwiper{
+  /* background-color: cadetblue; */
+  height: 100%;
+}
+.slide-container .mySwiper .swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-container .mySwiper .swiper-slide h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.403);
+  transform: translate(-50%,-50%);
+  font-size: 37px;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.slide-container .mySwiper .swiper-slide h2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.403);
+  transform: translate(-50%,-50%);
+  font-size: 29px;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.slide-container .mySwiper .swiper-slide h1:hover{
+  background-color: crimson;
+  
+}
+.cate-box{
+  height: 270px;
+  /* background-color: sandybrown; */
+  margin-top: 10px;
+ 
+}
+.cate-box .box{
+  height: 100%;
+  width: 100%;
+  /* background-color: bisque; */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cate-box .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cate-box .box h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+  padding: 8px 15px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cate-box .box h1:hover{
+  background-color: rgba(255, 0, 0, 0.711);
+  color: white;
+}
+.cate-box .box:hover img{
+  transform: scale(1.1);
+  transition: 0.5s;
+  
+}
+.item-box{
+  margin-top: 10px;
+  height: 360px;
+  /* background-color: sandybrown; */
+  padding: 5px;
+}
+.item-box .box{
+  width: 100%;
+  height: 100%;
+  background-color: khaki;
+}
+.item-box .box .img-box{
+  height: 65%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.item-box .box .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ 
+}
+.item-box .box .txt-box{
+  height: 35%;
+  width: 100%;
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.item-box .box .txt-box h1{
+  font-size: 15px;
+  text-align: center;
+  height: 36px;
+}
+.item-box .box .txt-box h2{
+  color: red;
+  font-size: 13px;
+  text-align: center;
+}
+.item-box .box .txt-box ul{
+  display: flex;
+  gap: 6px;
+  
+}
+.item-box .box .txt-box ul li{
+  width: 36px;
+  height: 36px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.item-box .box .txt-box ul li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-box .box .txt-box ul li img:hover{
+  border: 2px solid crimson;
+  cursor: pointer;
+}
+.item-box .box .txt-box ul li.active{
+  border: 2px solid blue;
+}
+.btn-More{
+  display: flex;
+  justify-content: center;
+}
+.btn-More div{
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-block: 20px;
+}
+.left-menu{
+  background-color: rgba(0, 0, 0, 0.437);
+}
+.left-menu ul li a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: white !important; 
+  padding: 20px;
+  cursor: pointer;
+}
+.left-menu ul li a.active{
+  background-color: crimson;
+}
+.left-menu ul li a i{
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.left-menu ul li a:hover{
+ background-color: crimson;
+}
+.left-menu ul li .left-sub-menu{
+  width: 90%;
+  margin-left: 5%;
+  background-color: cadetblue;
+  color: white;
+}
+.left-menu ul li .left-sub-menu ul li a:hover{
+  color: white;
+}
+.left-menu ul li .left-sub-menu ul li a.router-link-active{
+  background-color: #333;
+}
+.popdetail{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  z-index: 99;
+}
+.popdetail .frm{
+  width: 70%;
+  height:90%;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.popdetail .frm .img-box{
+  position: absolute;
+  border: 2px solid #ccc;
+  left: 20px;
+  top: 20px;
+  width: 55%;
+  height: 93%;
+  /* transform: translate(-50%,-50%); */
+   /* background-color: antiquewhite; */
+}
+.popdetail .frm .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.popdetail .frm .sub-img-box{
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+}
+.popdetail .frm .sub-img-box ul{
+  display: flex;
+  gap: 6px;
+}
+.popdetail .frm .sub-img-box ul li{
+  width: 45px;
+  height: 45px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.popdetail .frm .sub-img-box ul li.active{
+  border: 2px solid blue;
+}
+.popdetail .frm .sub-img-box  ul li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popdetail .frm .sub-img-box ul li img:hover{
+  border: 2px solid crimson;
+  cursor: pointer;
+}
+.popdetail .frm .description{
+  position: absolute;
+  top: 20px;
+  right :0;
+  width: 43%;
+  height: 93%;
+  overflow-y: scroll;
+  /* background-color: chocolate; */
+}
+.popdetail .frm .description span#Price{
+  color: red;
+  text-decoration: line-through;
+  float: left;
+ margin: 10px;
+ font-size: 20px;
+}
+.popdetail .frm .description #Price_des{
+  margin: 10px;
+ font-size: 20px;
+  float: left;
+  color: blue;
+}
+.popdetail .frm .description h1{
+  font-size: 22px;
+  font-weight: bold;
+}
+.popdetail .frm .description p{
+  margin: 10px;
+    
+}
+.btn-Close{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+}
+.btn-Close i{
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
